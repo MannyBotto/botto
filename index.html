@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Botto — Project Status Update · April 21, 2026</title>
+<title>Botto — Project Status Update · April 23, 2026</title>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -15,7 +15,6 @@
     min-height: 100vh;
   }
 
-  /* ── PAGE HEADER ── */
   .page-header {
     margin-bottom: 36px;
     border-bottom: 0.5px solid #2a2a28;
@@ -23,7 +22,6 @@
   }
   .page-title { font-size: 22px; font-weight: 500; color: #f0efe8; letter-spacing: -0.02em; }
 
-  /* ── INTRO BLOCK ── */
   .intro-block {
     background: #131312;
     border: 0.5px solid #2a2a27;
@@ -42,7 +40,6 @@
   .intro-body p  { font-size: 13.5px; color: #c8c7c0; line-height: 1.7; margin-bottom: 12px; }
   .intro-body p:last-child { margin-bottom: 0; }
 
-  /* ── TEAMS ── */
   .team-section  { margin-bottom: 36px; }
   .team-label {
     display: flex;
@@ -58,7 +55,6 @@
   .team-label-icon { font-size: 13px; }
   .team-line { flex: 1; height: 0.5px; background: #222220; }
 
-  /* ── CARDS ── */
   .card-grid { display: flex; flex-wrap: wrap; gap: 10px; align-items: flex-start; }
   .card {
     width: 268px;
@@ -78,7 +74,6 @@
   }
   .card-name { font-size: 13px; font-weight: 500; color: #e8e7e0; line-height: 1.35; flex: 1; }
 
-  /* ── PILLS ── */
   .pill {
     display: inline-flex; align-items: center; gap: 4px;
     font-size: 10px; font-weight: 500; padding: 3px 7px;
@@ -89,8 +84,8 @@
   .pill-red   { background: #3a1414; color: #e88080; } .pill-red   .pill-dot { background: #E24B4A; }
   .pill-amber { background: #382208; color: #e8a84a; } .pill-amber .pill-dot { background: #EF9F27; }
   .pill-green { background: #0f2810; color: #7abf7a; } .pill-green .pill-dot { background: #639922; }
+  .pill-grey  { background: #1e1e1c; color: #666660; } .pill-grey  .pill-dot { background: #444440; }
 
-  /* ── UNIVERSAL FIELD LABEL ── */
   .field-label {
     display: block;
     font-size: 9px;
@@ -100,21 +95,9 @@
     color: #555550;
     margin-bottom: 4px;
   }
+  .field-text { font-size: 11px; color: #888882; line-height: 1.5; }
+  .field-text-highlight { font-size: 11px; font-weight: 700; color: #f0efe8; line-height: 1.5; }
 
-  /* ── FIELD VALUES ── */
-  .field-text {
-    font-size: 11px;
-    color: #888882;
-    line-height: 1.5;
-  }
-  .field-text-highlight {
-    font-size: 11px;
-    font-weight: 700;
-    color: #f0efe8;
-    line-height: 1.5;
-  }
-
-  /* ── MILESTONE DIVIDER BLOCK ── */
   .card-milestones {
     border-top: 0.5px solid #2a2a27;
     border-bottom: 0.5px solid #2a2a27;
@@ -124,7 +107,6 @@
     gap: 10px;
   }
 
-  /* ── CONTEXT BOX ── */
   .context-box {
     font-size: 11px;
     color: #b0afa8;
@@ -134,7 +116,6 @@
     padding: 8px 10px;
   }
 
-  /* ── COMING SOON CARD ── */
   .card-coming-soon {
     width: 268px;
     background: #111110;
@@ -146,26 +127,19 @@
     justify-content: center;
     min-height: 80px;
   }
-  .coming-soon-text {
-    font-size: 11px;
-    color: #333330;
-    font-style: italic;
-    letter-spacing: 0.04em;
-  }
+  .coming-soon-text { font-size: 11px; color: #333330; font-style: italic; letter-spacing: 0.04em; }
 </style>
 </head>
 <body>
 
-<!-- PAGE HEADER -->
 <div class="page-header">
   <span class="page-title">Botto — project status update</span>
 </div>
 
-<!-- INTRO BLOCK -->
 <div class="intro-block">
   <div class="intro-header">
     <span class="intro-title">Overview</span>
-    <span class="intro-updated">Last updated: April 21, 2026</span>
+    <span class="intro-updated">Last updated: April 23, 2026</span>
   </div>
   <div class="intro-body">
     <p>This is the first edition of a bi-weekly project status update from the Botto core team. Going forward, this page will be updated every two weeks and shared with the DAO as our primary transparency tool for tracking what we're working on, what's coming next, and what has been delivered.</p>
@@ -178,6 +152,57 @@
 <div class="team-section">
   <div class="team-label"><span class="team-label-icon">🤖</span> Agent <div class="team-line"></div></div>
   <div class="card-grid">
+
+    <div class="card">
+      <div class="card-top">
+        <span class="card-name">HK / KJ audit</span>
+        <span class="pill pill-blue"><span class="pill-dot"></span>In progress</span>
+      </div>
+      <div>
+        <span class="field-label">Deliverable</span>
+        <p class="field-text">A clear picture of the state of Botto's memory infrastructure and everything built for Hong Kong — what to build on, what to shut down, and where technical debt lives.</p>
+      </div>
+      <div class="card-milestones">
+        <div>
+          <span class="field-label">Next milestone</span>
+          <p class="field-text-highlight">Complete audit and share findings</p>
+        </div>
+        <div>
+          <span class="field-label">Milestone deadline</span>
+          <p class="field-text-highlight">~May 7</p>
+        </div>
+      </div>
+      <div>
+        <span class="field-label">Context</span>
+        <div class="context-box">Prerequisite for all other agent work — including the next prototype. Results will inform which systems are worth building on and which should be retired.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <span class="card-name">Agent R&D</span>
+        <span class="pill pill-amber"><span class="pill-dot"></span>Kick-off scheduled</span>
+      </div>
+      <div>
+        <span class="field-label">Deliverable</span>
+        <p class="field-text">A defined next prototype or experiment for Botto's agent capabilities, with a clear scope and timeline to move forward.</p>
+      </div>
+      <div class="card-milestones">
+        <div>
+          <span class="field-label">Next milestone</span>
+          <p class="field-text-highlight">Kick-off session with technical team</p>
+        </div>
+        <div>
+          <span class="field-label">Milestone deadline</span>
+          <p class="field-text-highlight">Week of May 12</p>
+        </div>
+      </div>
+      <div>
+        <span class="field-label">Context</span>
+        <div class="context-box">Exploratory — the next prototype hasn't been defined yet. The 6529 meme card (BIP88) is one candidate, but needs to be weighed against other priorities. The kick-off session will assess what the right next experiment is and at what cost. Dependent on the HK/KJ audit completing first.</div>
+      </div>
+    </div>
+
     <div class="card">
       <div class="card-top">
         <span class="card-name">6529 Meme (BIP88)</span>
@@ -185,7 +210,7 @@
       </div>
       <div>
         <span class="field-label">Deliverable</span>
-        <p class="field-text">A Botto artwork submitted to 6529.io, expanding Botto's presence in a key ecosystem.</p>
+        <p class="field-text">A Botto artwork submitted to 6529.io, expanding Botto's presence in a key ecosystem and showcasing new memory and reasoning capabilities.</p>
       </div>
       <div class="card-milestones">
         <div>
@@ -199,9 +224,10 @@
       </div>
       <div>
         <span class="field-label">Context</span>
-        <div class="context-box">Over 120 hours invested without results that met the quality bar. Assessing with another team member whether this can be completed and at what cost before committing further resources.</div>
+        <div class="context-box">Over 120 hours invested without results that met the quality bar. One of the candidates being evaluated as part of the Agent R&D kick-off. Before committing further resources, we need to assess whether this can be completed, how long it would take, and at what cost.</div>
       </div>
     </div>
+
   </div>
 </div>
 
@@ -235,6 +261,32 @@
       </div>
     </div>
 
+
+    <div class="card">
+      <div class="card-top">
+        <span class="card-name">Sanctification roadmap</span>
+        <span class="pill pill-blue"><span class="pill-dot"></span>In progress</span>
+      </div>
+      <div>
+        <span class="field-label">Deliverable</span>
+        <p class="field-text">A defined list of everything the platform needs — technically and infrastructurally — to ensure Botto runs indefinitely. A one-time effort to establish this foundation.</p>
+      </div>
+      <div class="card-milestones">
+        <div>
+          <span class="field-label">Next milestone</span>
+          <p class="field-text-highlight">Define priority items on the roadmap</p>
+        </div>
+        <div>
+          <span class="field-label">Milestone deadline</span>
+          <p class="field-text-highlight">Week of May 12</p>
+        </div>
+      </div>
+      <div>
+        <span class="field-label">Context</span>
+        <div class="context-box">A platform-focused project asking: what does Botto technically need to never stop running? Covers infrastructure, storage, dependencies, and protocol-level decisions. Distinct from governance or ops work — this is strictly about the technical and architectural layer that needs to be identified, documented, and secured now.</div>
+      </div>
+    </div>
+
     <div class="card">
       <div class="card-top">
         <span class="card-name">Open-sourcing stack</span>
@@ -256,7 +308,7 @@
       </div>
       <div>
         <span class="field-label">Context</span>
-        <div class="context-box">The API is already open and functional — missing pieces are documentation and a communication push. In final QA before release. Community members have already expressed interest in building on it.</div>
+        <div class="context-box">The API is already open and functional — missing pieces are documentation and a communication push. In final QA before release. Community members have already expressed interest in building on it once available. Treated as medium-term work running in parallel with higher-priority items.</div>
       </div>
     </div>
 
@@ -272,7 +324,7 @@
       <div class="card-milestones">
         <div>
           <span class="field-label">Next milestone</span>
-          <p class="field-text-highlight">Resume feasibility study</p>
+          <p class="field-text-highlight">Start feasibility study</p>
         </div>
         <div>
           <span class="field-label">Milestone deadline</span>
@@ -281,7 +333,7 @@
       </div>
       <div>
         <span class="field-label">Context</span>
-        <div class="context-box">Measures 1–3 reviewed. Measures 2, 5, 6, 7 moving forward — covering weekly mint selection, visiting curators, pipe stacking, and smaller voting pool. Measure 4 (VP delegation) scoped as its own project.</div>
+        <div class="context-box">Measures 1–3 reviewed. Measures 2, 5, 6, 7 moving forward — covering weekly mint selection, visiting curators, pipe stacking, and smaller voting pool. Measure 4 (VP delegation) scoped as its own project. A BIP will need to be passed — governance timeline is being tracked separately.</div>
       </div>
     </div>
 
@@ -297,16 +349,16 @@
       <div class="card-milestones">
         <div>
           <span class="field-label">Next milestone</span>
-          <p class="field-text-highlight">Define project timeline</p>
+          <p class="field-text-highlight">Review initial scoping + define timeline</p>
         </div>
         <div>
           <span class="field-label">Milestone deadline</span>
-          <p class="field-text-highlight">April 25</p>
+          <p class="field-text-highlight">Week of May 12</p>
         </div>
       </div>
       <div>
         <span class="field-label">Context</span>
-        <div class="context-box">Scoped as a standalone priority from the Curation BIP. Enables new curation models and collaboration with large stakeholders without requiring full governance cycles. Feasibility underway.</div>
+        <div class="context-box">Initial scoping has been done. Enables new curation models and collaboration with large stakeholders without requiring full governance cycles. High strategic priority.</div>
       </div>
     </div>
 
@@ -364,7 +416,7 @@
       </div>
       <div>
         <span class="field-label">Context</span>
-        <div class="context-box">Kick-off completed last week. Requires pulling from old documentation, accounting records, and prior BIPs. Gives the DAO a clear picture of what was accomplished with the resources allocated.</div>
+        <div class="context-box">Kick-off completed. Requires pulling from old documentation, accounting records, and prior BIPs. Gives the DAO a clear picture of what was accomplished and sets direction for the year ahead.</div>
       </div>
     </div>
 
@@ -389,7 +441,7 @@
       </div>
       <div>
         <span class="field-label">Context</span>
-        <div class="context-box">Working with an external consultant experienced in DAO governance. Covers foundational setup, proposal ratification process, community moderation, and phased rollout. Goal is a structure that is light, sustainable, and makes Botto more resilient.</div>
+        <div class="context-box">Working with an external consultant experienced in DAO governance. Latest direction is to minimize governance surface area — keeping it simple enough to actually run. Covers foundational setup, proposal ratification process, community moderation, and phased rollout.</div>
       </div>
     </div>
 
@@ -447,7 +499,7 @@
       </div>
       <div>
         <span class="field-label">Context</span>
-        <div class="context-box">Four open tracks: accounting (pending final Art Basel invoice, expected under 20K), sales follow-up + documentation, product + website + Verse wrap-up, and the 100 $BOTTO claim campaign. Expenses ex-payroll currently at ~108K, with a ~12K gap being verified.</div>
+        <div class="context-box">Four open tracks: accounting (pending final Art Basel invoice, expected under 20K), sales follow-up + documentation, product + website + Verse wrap-up, and the 100 $BOTTO claim campaign. Expenses ex-payroll currently at ~108K, with a ~12K gap being verified. Some invoices still outstanding.</div>
       </div>
     </div>
 
@@ -463,7 +515,7 @@
       <div class="card-milestones">
         <div>
           <span class="field-label">Next milestone</span>
-          <p class="field-text-highlight">Final review: leads, studio, sales</p>
+          <p class="field-text-highlight">Final review with team — add deadlines to all projects</p>
         </div>
         <div>
           <span class="field-label">Milestone deadline</span>
@@ -472,7 +524,7 @@
       </div>
       <div>
         <span class="field-label">Context</span>
-        <div class="context-box">Meetings completed with every core team member. Active projects audited, missing ones created, stale entries flagged. Ghost work will be formally tracked for capacity planning. Final session outstanding.</div>
+        <div class="context-box">Clean-up is done. Every core team member has been met with, active projects are audited, stale entries archived, and missing ones created. Ghost work is now formally tracked. Final step is a review session to assign deadlines to all active projects.</div>
       </div>
     </div>
 
@@ -497,7 +549,7 @@
       </div>
       <div>
         <span class="field-label">Context</span>
-        <div class="context-box">Bi-weekly cadence and internal team meeting now established. This page is the first output. Next phase is refining the format based on DAO feedback and identifying what can be automated.</div>
+        <div class="context-box">Bi-weekly cadence and internal team meeting now established. This page is the first output. Next phase is refining the format based on DAO feedback and identifying what can be automated over time.</div>
       </div>
     </div>
 
@@ -522,7 +574,7 @@
       </div>
       <div>
         <span class="field-label">Context</span>
-        <div class="context-box">Dashboard in final feedback phase. On-chain worker for the Studio nearing completion. Both deliverables expected to ship around the same time.</div>
+        <div class="context-box">Dashboard in final feedback phase. On-chain worker for the Studio nearing completion. Both deliverables expected to ship around the same time. Timely to share with the DAO alongside this reporting update.</div>
       </div>
     </div>
 
@@ -559,6 +611,31 @@
       </div>
     </div>
 
+    <div class="card">
+      <div class="card-top">
+        <span class="card-name">NFC Lisbon activation</span>
+        <span class="pill pill-blue"><span class="pill-dot"></span>In progress</span>
+      </div>
+      <div>
+        <span class="field-label">Deliverable</span>
+        <p class="field-text">A Botto activation at NFC Lisbon, handled by 11 Yellow, with Botto's marketing team and a collaborator plugged in and aligned.</p>
+      </div>
+      <div class="card-milestones">
+        <div>
+          <span class="field-label">Next milestone</span>
+          <p class="field-text-highlight">Connect marketing team and collaborator to 11 Yellow</p>
+        </div>
+        <div>
+          <span class="field-label">Milestone deadline</span>
+          <p class="field-text-highlight">This week</p>
+        </div>
+      </div>
+      <div>
+        <span class="field-label">Context</span>
+        <div class="context-box">11 Yellow is running this fairly autonomously. The immediate need is ensuring the right people from Botto's side are looped in so the activation can continue moving independently.</div>
+      </div>
+    </div>
+
   </div>
 </div>
 
@@ -566,29 +643,165 @@
 <div class="team-section">
   <div class="team-label"><span class="team-label-icon">🎨</span> Studio <div class="team-line"></div></div>
   <div class="card-grid">
-    <div class="card-coming-soon">
-      <span class="coming-soon-text">Projects coming soon</span>
+
+    <div class="card">
+      <div class="card-top">
+        <span class="card-name">Botto Digital Portfolio — website integration</span>
+        <span class="pill pill-blue"><span class="pill-dot"></span>In progress</span>
+      </div>
+      <div>
+        <span class="field-label">Deliverable</span>
+        <p class="field-text">An updated, integrated Botto digital portfolio live on the website.</p>
+      </div>
+      <div class="card-milestones">
+        <div>
+          <span class="field-label">Next milestone</span>
+          <p class="field-text-highlight">Complete integration</p>
+        </div>
+        <div>
+          <span class="field-label">Milestone deadline</span>
+          <p class="field-text-highlight">May 1</p>
+        </div>
+      </div>
+      <div>
+        <span class="field-label">Context</span>
+        <div class="context-box">Goal is to have the portfolio updated and properly integrated by May 1.</div>
+      </div>
     </div>
+
+    <div class="card">
+      <div class="card-top">
+        <span class="card-name">Botto x Artificial Creativity, Aargauer Kunsthaus</span>
+        <span class="pill pill-blue"><span class="pill-dot"></span>In progress</span>
+      </div>
+      <div>
+        <span class="field-label">Deliverable</span>
+        <p class="field-text">A confirmed Botto participation in the Artificial Creativity exhibition at Aargauer Kunsthaus.</p>
+      </div>
+      <div class="card-milestones">
+        <div>
+          <span class="field-label">Next milestone</span>
+          <p class="field-text-highlight">TBD</p>
+        </div>
+        <div>
+          <span class="field-label">Milestone deadline</span>
+          <p class="field-text-highlight">August 1</p>
+        </div>
+      </div>
+      <div>
+        <span class="field-label">Context</span>
+        <div class="context-box">Progress is ongoing with an August 1 project date.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <span class="card-name">EACV Art Prize application</span>
+        <span class="pill pill-blue"><span class="pill-dot"></span>In progress</span>
+      </div>
+      <div>
+        <span class="field-label">Deliverable</span>
+        <p class="field-text">A submitted Botto application for the EACV Art Prize.</p>
+      </div>
+      <div class="card-milestones">
+        <div>
+          <span class="field-label">Next milestone</span>
+          <p class="field-text-highlight">Submit application</p>
+        </div>
+        <div>
+          <span class="field-label">Milestone deadline</span>
+          <p class="field-text-highlight">TBD</p>
+        </div>
+      </div>
+      <div>
+        <span class="field-label">Context</span>
+        <div class="context-box">Draft prepared and ready for final copy edits before submission.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <span class="card-name">Mirror Stages — technical rider + production costs</span>
+        <span class="pill pill-blue"><span class="pill-dot"></span>In progress</span>
+      </div>
+      <div>
+        <span class="field-label">Deliverable</span>
+        <p class="field-text">A finalized technical rider and production cost document for Mirror Stages, ready for collector and venue conversations.</p>
+      </div>
+      <div class="card-milestones">
+        <div>
+          <span class="field-label">Next milestone</span>
+          <p class="field-text-highlight">Finalize document</p>
+        </div>
+        <div>
+          <span class="field-label">Milestone deadline</span>
+          <p class="field-text-highlight">TBD</p>
+        </div>
+      </div>
+      <div>
+        <span class="field-label">Context</span>
+        <div class="context-box">Key document needed for collector meetings and any future acquisition conversations. Currently being compiled.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <span class="card-name">Lumen Prize 2026</span>
+        <span class="pill pill-blue"><span class="pill-dot"></span>In progress</span>
+      </div>
+      <div>
+        <span class="field-label">Deliverable</span>
+        <p class="field-text">A submitted Botto entry for the Lumen Prize 2026.</p>
+      </div>
+      <div class="card-milestones">
+        <div>
+          <span class="field-label">Next milestone</span>
+          <p class="field-text-highlight">Submit entry</p>
+        </div>
+        <div>
+          <span class="field-label">Milestone deadline</span>
+          <p class="field-text-highlight">May 24</p>
+        </div>
+      </div>
+      <div>
+        <span class="field-label">Context</span>
+        <div class="context-box">Draft is ready. Submission deadline is May 24, giving enough runway for a final review before submitting.</div>
+      </div>
+    </div>
+
   </div>
 </div>
 
-<!-- SALES -->
+<!-- SALES & LEADS -->
 <div class="team-section">
-  <div class="team-label"><span class="team-label-icon">💼</span> Sales <div class="team-line"></div></div>
+  <div class="team-label"><span class="team-label-icon">🤝</span> Sales &amp; Leads <div class="team-line"></div></div>
   <div class="card-grid">
-    <div class="card-coming-soon">
-      <span class="coming-soon-text">Projects coming soon</span>
-    </div>
-  </div>
-</div>
 
-<!-- LEADS -->
-<div class="team-section">
-  <div class="team-label"><span class="team-label-icon">🔗</span> Leads <div class="team-line"></div></div>
-  <div class="card-grid">
-    <div class="card-coming-soon">
-      <span class="coming-soon-text">Projects coming soon</span>
+    <div class="card">
+      <div class="card-top">
+        <span class="card-name">Active exhibition &amp; collector outreach</span>
+        <span class="pill pill-green"><span class="pill-dot"></span>Ongoing (core)</span>
+      </div>
+      <div>
+        <span class="field-label">Deliverable</span>
+        <p class="field-text">A continuously maintained pipeline of exhibition, collector, and partnership opportunities — keeping Botto present in the right rooms and conversations.</p>
+      </div>
+      <div class="card-milestones">
+        <div>
+          <span class="field-label">Next milestone</span>
+          <p class="field-text-highlight">Continuous</p>
+        </div>
+        <div>
+          <span class="field-label">Milestone deadline</span>
+          <p class="field-text-highlight">N/A</p>
+        </div>
+      </div>
+      <div>
+        <span class="field-label">Context</span>
+        <div class="context-box">Core ongoing work across sales and exhibition development. Active opportunities currently being pursued include: Swiss Collector (Mirror Stages acquisition), Gazelli Show, FORA Decentralized Conservation, Quebec / Canada grants, ZKM donation + exhibition, Spuma (Argentinian Museum), Gazelli / AARON collab, SR Show x MoMI, Primavera: Artificial Life, and NODE Fall Lecture.</div>
+      </div>
     </div>
+
   </div>
 </div>
 
